@@ -14,6 +14,13 @@ To activate the virtual environment:
 source .venv/bin/activate
 ```
 
+IMPORTANT: To setup pre-commit (https://pre-commit.com/):
+
+```bash
+pip install pre-commit
+pre-commit install
+```
+
 Sync project's dependencies with the environment:
 ```bash
 uv sync
