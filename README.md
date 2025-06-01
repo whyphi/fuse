@@ -1,5 +1,7 @@
 # Fuse
 
+![whyphi-architecture](https://whyphi-public.s3.us-east-1.amazonaws.com/whyphi-high-level-architecture.png)
+
 ### 🛠 Setup Instructions
 
 This repo uses [`uv`](https://docs.astral.sh/uv) as the Python package and project manager (unlike Zap, which used pip/pipenv).
