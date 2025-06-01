@@ -1,8 +1,13 @@
-Unlike Zap, in this repo, we'll be using uv as our Python package and project manager.
+# Fuse
 
-To install uv: https://docs.astral.sh/uv/#installation
+### 🛠 Setup Instructions
 
-To create a virtual environment:
+This repo uses [`uv`](https://docs.astral.sh/uv) as the Python package and project manager (unlike Zap, which used pip/pipenv).
+
+#### Install `uv`
+Follow the instructions here: https://docs.astral.sh/uv/#installation
+
+#### Create & activate a virtual environment
 
 ```bash
 uv venv
@@ -14,19 +19,25 @@ To activate the virtual environment:
 source .venv/bin/activate
 ```
 
-IMPORTANT: To setup pre-commit (https://pre-commit.com/):
+#### Sync dependencies
+
+```bash
+uv sync
+```
+This installs everything listed in `pyproject.toml`.
+
+#### Setup pre-commit hooks
+
+Refer to https://pre-commit.com/
 
 ```bash
 pip install pre-commit
 pre-commit install
 ```
 
-Sync project's dependencies with the environment:
-```bash
-uv sync
-```
+💡 This ensures that `requirements.txt` stays in sync and formatting rules (if any) are enforced.
 
-To run the server:
+#### Run the server
 
 ```bash
 uv run fastapi dev
